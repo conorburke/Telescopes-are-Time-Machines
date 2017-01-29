@@ -11,7 +11,7 @@ gem 'rails', '~> 5.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -28,9 +28,21 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
+gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+
+# for picture input and storage
+gem 'carrierwave', '0.11.2'
+gem 'mini_magick', '4.5.1'
+gem 'fog', '1.38.0'
+
+# for scrolling through multiple posts
+gem 'will_paginate', '3.1.0'
+
+# for styling
+gem 'bootstrap-will_paginate', '0.0.10'
+gem 'bootstrap-sass'#, '3.3.6'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -38,6 +50,10 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :development do
