@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # info pages
   get '/about', to: 'info_pages#about'
+  get '/contact', to: 'info_pages#contact'
   get '/help', to: 'info_pages#help'
   get '/home', to: 'info_pages#home'
 end

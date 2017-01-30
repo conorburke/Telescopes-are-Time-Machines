@@ -1,2 +1,151 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* custom colors */
+$deep-space-blue: #09046a;
+$bright-space-blue: #00688B;
+
+/* universal */
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.home-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-container {
+  margin: 5px;
+  padding: 5px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  padding: 2px;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* header */
+
+#logo {
+  margin-left: 5px;
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 10px;
+  font-weight: bold;
+  &:hover {
+    color: $bright-space-blue;
+    text-decoration: none;
+  }
+}
+
+.header-nav-bar {
+  background-color: black;
+}
+
+.header-links {
+  margin-right: 0px;
+  a {
+    color: white;
+    &:hover {
+      color: $bright-space-blue;
+    }
+  }
+
+}
+
+/* footer */
+
+footer {
+  padding: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-light;
+  color: white;
+  background-color: black;
+  a {
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $bright-space-blue;
+      text-decoration: none;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+/* images */
+
+.home-container-middle {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  width: 600px;
+  box-shadow: 5px 5px 5px 5px darkgrey;
+}
+
+#telescope-picture {
+  width: 100%;
+  height: auto;
+}
