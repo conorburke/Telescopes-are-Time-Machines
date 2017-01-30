@@ -134,6 +134,17 @@ footer {
 }
 /* home */
 .home-container-left  {
+  h3{
+    display: inline-block;
+  }
+  a {
+    color: $deep-space-blue;
+    &:hover {
+      background-color: white;
+      color: $bright-space-blue;
+      text-decoration: none;
+    }
+  }
   border: 2px black solid;
   padding: 10px;
   background-color: $gray-light;
@@ -163,4 +174,16 @@ footer {
 /* new user form */
 #new-user-submit-button {
   margin-top: 5px;
+}
+
+.new-user-container-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-user-container {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
 }
