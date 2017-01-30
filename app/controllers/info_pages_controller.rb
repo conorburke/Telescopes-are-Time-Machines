@@ -9,5 +9,6 @@ class InfoPagesController < ApplicationController
   end
 
   def home
+    @user = User.new
   end
 end

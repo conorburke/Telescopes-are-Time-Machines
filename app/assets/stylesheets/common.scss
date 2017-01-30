@@ -132,7 +132,14 @@ footer {
     }
   }
 }
-
+/* home */
+.home-container-left  {
+  border: 2px black solid;
+  padding: 10px;
+  background-color: $gray-light;
+  border-radius: 15px;
+  color: white;
+}
 /* images */
 
 .home-container-middle {
@@ -148,4 +155,12 @@ footer {
 #telescope-picture {
   width: 100%;
   height: auto;
+}
+
+
+
+
+/* new user form */
+#new-user-submit-button {
+  margin-top: 5px;
 }

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/contact', to: 'info_pages#contact'
   get '/help', to: 'info_pages#help'
   get '/home', to: 'info_pages#home'
+
+  resources :users
 end
