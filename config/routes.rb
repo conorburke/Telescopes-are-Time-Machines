@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   get '/help', to: 'info_pages#help'
   get '/home', to: 'info_pages#home'
 
+  # sessions
+  get '/login', to: 'sessions#new'
+  delete '/logout', to: 'sessions#destroy'
+  post '/login', to: 'sessions#create'
+
   resources :users
   resources :account_activations, only: [:edit]
 end
