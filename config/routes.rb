@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
   resources :users
   resources :account_activations, only: [:edit]
+  resources :chat_rooms, only: [:new, :create, :show, :index]
 end

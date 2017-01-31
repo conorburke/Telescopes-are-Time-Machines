@@ -188,3 +188,13 @@ footer {
 #home-page-sign-up-title {
   text-align: center;
 }
+
+/* messages */
+
+#messages {
+  max-height: 450px;
+  overflow-y: auto;
+  .avatar {
+    margin: 0.5rem;
+  }
+}
