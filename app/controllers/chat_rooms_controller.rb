@@ -1,4 +1,6 @@
 class ChatRoomsController < ApplicationController
+  before_action :logged_in_user
+
   def index
     @chat_rooms = ChatRoom.all
   end
