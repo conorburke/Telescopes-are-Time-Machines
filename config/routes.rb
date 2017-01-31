@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/home', to: 'info_pages#home'
 
   resources :users
+  resources :account_activations, only: [:edit]
 end
