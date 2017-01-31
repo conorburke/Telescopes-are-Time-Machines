@@ -29,5 +29,6 @@ jQuery(document).on 'ready', ->
       if $.trim(textarea.val()).length > 1
         App.global_chat.send_message textarea.val(), messages.data('chat-room-id')
         textarea.val('')
+        textarea.focus()
 
       return false
