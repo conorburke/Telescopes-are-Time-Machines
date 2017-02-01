@@ -1,0 +1,10 @@
+  <div class="home-page-image-right">
+    <%= image_tag("nasa_logo.jpg", class: "space-pictures") %> 
+  </div>
+  <div class="tweet-container">
+    <% TwitterAPI.public_tweets.each do |tweet| %>
+      <div class="individual-tweets">
+        <%= parsed_tweet(tweet) %>
+      </div>
+    <% end %>
+  </div>
