@@ -136,7 +136,9 @@ footer {
     }
   }
 }
+
 /* home */
+
 .home-container-left  {
   a {
     color: $deep-space-blue;
@@ -152,6 +154,15 @@ footer {
   border-radius: 15px;
   color: white;
 }
+
+.individual-tweets {
+  border: 2px black solid;
+  padding: 10px;
+  background-color: $gray-light;
+  border-radius: 15px;
+  color: white;
+}
+
 /* images */
 
 .home-container-middle {

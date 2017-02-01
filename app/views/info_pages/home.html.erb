@@ -23,9 +23,5 @@
   </div>
 </div>
 <div class="home-container-right col-md-3">
-  <ul>
-    <% TwitterAPI.public_tweets.each do |tweet| %>
-      <li><%= tweet.text %></li>
-    <% end %>
-  </ul>
+  <%= render 'info_pages/twitter_feed' %>
 </div>
