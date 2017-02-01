@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'info_pages#home'
 
+  # mount actioncable on the /cable url
+  mount ActionCable.server => '/cable'
+
   # info pages
   get '/about', to: 'info_pages#about'
   get '/contact', to: 'info_pages#contact'
@@ -15,4 +18,5 @@ Rails.application.routes.draw do
 
   resources :users
   resources :account_activations, only: [:edit]
+  resources :chat_rooms, only: [:new, :create, :show, :index]
 end

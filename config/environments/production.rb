@@ -97,4 +97,12 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # use actioncable chat rooms when deployed, in this case heroku
+  config.action_cable.allowed_request_origins = ['https://telescopesaretimemachines.herokuapp.com',
+                                               'http://telescopesaretimemachines.herokuapp.com']
+
+  config.action_cable.url = "wss://telescopesaretimemachines.herokuapp.com/cable"
+
+
 end

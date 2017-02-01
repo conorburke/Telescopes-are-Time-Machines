@@ -4,6 +4,8 @@ class AccountActivationsController < ApplicationController
     if user && !user.activated? && user.authenticated?(:activation, params[:id])
       user.activate
       log_in user
+      cookies.signed[:user_email] = ""
+      cookies.signed[:user_email] = params[:session][:email].downcase
       flash[:success] = "Account activated!"
       redirect_to user
     else
