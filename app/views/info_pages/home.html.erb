@@ -1,13 +1,21 @@
 <% provide(:title, "TATM: Home") %>
 <h1>Keep Looking Up</h1>
-<div class="home-container-left col-md-3">
-  <h3 id="home-page-sign-up-title"> Get Gazing! </h3> 
-<!--   <%= link_to "(Or Sign Up)", new_user_path %> -->
-  <%= render 'sessions/login_form' %>
-</div>
+<% unless logged_in? %>
+  <div class="home-container-left col-md-3">
+    <h3 id="home-page-sign-up-title"> Get Gazing! </h3> 
+    <%= render 'sessions/login_form' %>
+  </div>
+<% else %>
+  <div class="home-container-left col-md-3">
+    <h3 id="home-page-sign-up-title">Start Star Talking!</h3>
+    <ul style="margin: 30px; padding-left:0;">
+      <%= render 'chat_rooms/chat_room' %>
+    </ul>
+  </div>
+<% end %>
 <div class="home-container-middle col-md-6"> 
   <div class="image-container">
-     <%= image_tag("sts125.jpg", id: "telescope-picture") %> 
+     <%= image_tag("sts125.jpg", class: "space-pictures") %> 
   </div>
 </div>
 <div class="home-container-right col-md-3">

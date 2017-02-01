@@ -37,6 +37,10 @@ textarea {
   padding: 5px;
 }
 
+.btn-primary {
+  background-color: $bright-space-blue
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -103,7 +107,7 @@ p {
 
 footer {
   padding: 5px;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -160,7 +164,7 @@ footer {
   box-shadow: 5px 5px 5px 5px darkgrey;
 }
 
-#telescope-picture {
+.space-pictures {
   width: 100%;
   height: auto;
 }
@@ -192,9 +196,36 @@ footer {
 /* messages */
 
 #messages {
-  max-height: 450px;
+  max-height: 250px;
   overflow-y: auto;
   .avatar {
     margin: 0.5rem;
   }
+}
+
+.chat-room-list {
+  a {
+    font-size: 18px;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $bright-space-blue;
+      text-decoration: none;    
+    };
+  }
+}
+
+.chat-room-links-container {
+  border: 2px black solid;
+  padding: 10px;
+  background-color: $gray-light;
+  border-radius: 15px;
+  color: white;
+}
+
+.chat-room-index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

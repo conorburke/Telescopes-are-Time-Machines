@@ -10,5 +10,6 @@ class InfoPagesController < ApplicationController
 
   def home
     @user = User.new
+    @chat_rooms = ChatRoom.all
   end
 end
