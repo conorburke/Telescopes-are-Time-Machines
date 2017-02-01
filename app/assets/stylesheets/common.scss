@@ -37,6 +37,10 @@ textarea {
   padding: 5px;
 }
 
+.btn-primary {
+  background-color: $deep-space-blue
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -209,4 +213,19 @@ footer {
       text-decoration: none;    
     };
   }
+}
+
+.chat-room-links-container {
+  border: 2px black solid;
+  padding: 10px;
+  background-color: $gray-light;
+  border-radius: 15px;
+  color: white;
+}
+
+.chat-room-index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
