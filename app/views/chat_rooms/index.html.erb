@@ -1,10 +1,15 @@
 <h1>Star Talks</h1>
-<div class="chat-room-index-container">  
+<div class="chat-room-index-container col-md-4">  
   <div class="lead"><%= link_to 'New Chat Room', new_chat_room_path, class: 'btn btn-primary' %></div>
   </br>
   <div class="chat-room-links-container"> 
     <ul style="margin: 30px; padding-left:0;">
       <%= render 'chat_rooms/chat_room' %>
     </ul>
+  </div>
+</div>
+<div class="col-md-8"> 
+  <div class="image-container">
+     <%= image_tag("space_explorer.png", class: "space-pictures") %> 
   </div>
 </div>
