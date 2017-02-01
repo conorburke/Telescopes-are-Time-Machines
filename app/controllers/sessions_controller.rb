@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
       if user.activated?
         log_in user
         params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+        cookies.signed[:user_email] = ""
         cookies.signed[:user_email] = params[:session][:email].downcase
         redirect_back_or user
       else
@@ -24,6 +25,7 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out if logged_in?
+    cookies.signed[:user_email] = ""
     redirect_to root_url
   end
 end
