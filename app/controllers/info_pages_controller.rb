@@ -1,3 +1,5 @@
+require 'twitter_api.rb'
+
 class InfoPagesController < ApplicationController
   def about
   end
