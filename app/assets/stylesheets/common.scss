@@ -192,9 +192,21 @@ footer {
 /* messages */
 
 #messages {
-  max-height: 450px;
+  max-height: 250px;
   overflow-y: auto;
   .avatar {
     margin: 0.5rem;
+  }
+}
+
+.chat-room-list {
+  a {
+    font-size: 18px;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $bright-space-blue;
+      text-decoration: none;    
+    };
   }
 }
