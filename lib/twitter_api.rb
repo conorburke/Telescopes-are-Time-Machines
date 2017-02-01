@@ -1,6 +1,6 @@
 class TwitterAPI
   def self.public_tweets
-    client.user_timeline('NASA', count: 7, exclude_replies: true)
+    client.user_timeline('NASA', count: 10, exclude_replies: true)
   end
 
   def self.client

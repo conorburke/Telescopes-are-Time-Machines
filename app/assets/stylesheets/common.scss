@@ -15,21 +15,11 @@ section {
   overflow: auto;
 }
 
-textarea {
-  resize: vertical;
-}
-
 .center {
   text-align: center;
   h1 {
     margin-bottom: 10px;
   }
-}
-
-.home-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .custom-container {
@@ -106,13 +96,13 @@ p {
 /* footer */
 
 footer {
+  clear: both;
   padding: 5px;
   position: fixed;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-top: 45px;
-  padding-top: 5px;
   border-top: 1px solid $gray-light;
   color: white;
   background-color: black;
@@ -139,6 +129,12 @@ footer {
 
 /* home */
 
+.home-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .home-container-left  {
   a {
     color: $deep-space-blue;
@@ -153,14 +149,39 @@ footer {
   background-color: $gray-light;
   border-radius: 15px;
   color: white;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 
 .individual-tweets {
+  margin: 1px;
   border: 2px black solid;
   padding: 10px;
   background-color: $gray-light;
   border-radius: 15px;
   color: white;
+  a {
+    color: $deep-space-blue;
+    &:hover {
+      background-color: white;
+      color: $bright-space-blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.home-page-image-right {
+  margin: 2px;
+}
+
+.home-container-right {
+  margin-bottom: 50px;
+
+}
+
+.tweet-container {
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
 /* images */
@@ -179,9 +200,6 @@ footer {
   width: 100%;
   height: auto;
 }
-
-
-
 
 /* new user form */
 #new-user-submit-button {
